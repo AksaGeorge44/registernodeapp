@@ -1,4 +1,5 @@
 var express=require('express')
+
 var cors = require('cors')
 
 var bodyParser=require('body-parser')
@@ -10,6 +11,7 @@ var app=express()
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
+
 app.use(cors({
     origin: 'http://192.168.0.120:3000' // You can replace '*' with the actual origin of your Flutter app
   }));
